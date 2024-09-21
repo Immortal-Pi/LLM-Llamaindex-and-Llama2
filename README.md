@@ -28,7 +28,7 @@ A smallscale RAG system which loads PDF's documents(typically text books), when 
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/1.png))
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/2.png))
 
