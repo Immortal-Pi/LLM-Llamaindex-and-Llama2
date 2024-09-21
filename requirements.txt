@@ -1,4 +1,10 @@
+#below versions are for python 3.9
 llama-index
-openai
+transformers < 5.0.0
+hugging_face-hub<0.24.0
+einops
+accelerate
+langchain
+bitsandbytes #quantization process
 pypdf
-python-dotenv
+sentence_transformers #embedding - will consider entire sentence
