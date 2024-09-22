@@ -14,7 +14,9 @@ A smallscale RAG system which loads PDF's documents(typically text books), when 
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `TOKEN` | **Required**. Your API key |
+| `Hugging Face` | `TOKEN` | **Required**. Your API key |
+| :-------- | :------- | :------------------------- |
+| `Groq cloud` | `GROQ_API_KEY` | **Required**. Your API key |
 
 .
 
@@ -29,6 +31,8 @@ A smallscale RAG system which loads PDF's documents(typically text books), when 
 ## Screenshots
 
 ![App Screenshot](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/1.png)
+
+![App Screenshot](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/2.png)
 
 ![App Screenshot](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/2.png)
 
