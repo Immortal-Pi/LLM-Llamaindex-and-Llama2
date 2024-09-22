@@ -13,21 +13,22 @@ def create_streamlit_app(llm,portfolio,clean_text):
     if submit_button:
         try:
             loader=WebBaseLoader([url_input])
-            print(loader)
+
             data=clean_text(loader.load().pop().page_content)
 
             portfolio.load_portfolio()
-            print(data)
+
             jobs=llm.extract_jobs(data)
             # print(data)
             print(jobs)
             for job in jobs:
                 skills=job.get('skills',[])
-                print(skills)
+
                 links=portfolio.query_link(skills)
 
                 cover_letter=llm.write_cover(job,links)
-                st.code(cover_letter,language='markdown')
+                # st.code(cover_letter,language='markdown')
+                st.markdown(cover_letter)
         except Exception as e:
             st.error(f"An error occured: {e}")
 

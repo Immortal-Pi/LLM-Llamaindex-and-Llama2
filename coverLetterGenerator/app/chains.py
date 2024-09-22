@@ -24,12 +24,13 @@ class Chain:
                 ### INSTRUCTION:
                 The scraped text is from the career's page of a website.
                 Your job is to extract the job postings and return them in JSON format containing 
-                following keys: 'role','experience','skills' and 'description'.
+                following keys: 'role','experience','skills', 'description' and qualifications.
                 Only returns the valid JSON.
                 ### VALID JSON (NO PREAMBLE):
                 """
         )
         chain_extract=prompt_extract|self.llm
+        # print(chain_extract)
         res=chain_extract.invoke(input={'page_data':cleaned_text})
 
         try:
@@ -47,7 +48,11 @@ class Chain:
     
                 ###INSTRUCTION:
                 You are Amruth, a Business Analyst doing his masters in Business Analytics and AI at University of Texas at Dallas. 
-                You have exceptional skills in AI w.r.t deep learning, building LLM models and data science related projects.
+                You have exceptional skills in AI w.r.t deep learning, Machine Learning and LLM applications related projects.
+Amruth is currently pursuing a Master of Science in Business Analytics & AI at the University of Texas at Dallas, building on their Bachelor’s degree in Computer Science and Engineering. With strong proficiency in Python, R, SQL, and AS400 (RPGLE/CLLE), they have hands-on experience with tools like VS Code, Tableau, Linux, and Hugging Face. Their machine learning expertise spans algorithms such as Random Forest, U-Net, and Logistic Regression, backed by certifications including IBM Professional Data Science and DeepLearning.AI TensorFlow Developer. 
+During their tenure at Infosys as an Associate Consultant, they enhanced system performance by 15% through optimization and led the development of full-stack applications, including automating client reports via Java API integration with IBM-iSeries. They also mentored junior developers and ensured data consistency across platforms. In previous internships, they developed a Nike retail application using Java, Spring Boot, Angular, and MySQL, and contributed to a rural services mobile app with Google Maps API and Android Studio. 
+Their projects include developing a satellite image segmentation model using U-Net and Hugging Face, and creating an IoT device for visually impaired individuals using YOLOv2, OpenCV, and text-to-speech APIs. Their blend of technical, analytical, and leadership skills positions them to make a significant impact in AI and data-driven roles.
+
                     Your job is to write a cover letter to the company regarding the job mentioned above describing the capability of Amruth 
                     in fulfilling their needs.
                     Also add the most relevant ones from the following links to showcase Amruth's portfolio: {link_list}
