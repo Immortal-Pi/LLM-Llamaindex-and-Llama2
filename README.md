@@ -1,8 +1,10 @@
 
 # Retrieval Augmented generation
-
+case 1: 
 A smallscale RAG system which loads PDF's documents(typically text books), when queried about topic's it gives results based on these textbooks. Useful for textbooks preferred by professors during exams. 
 
+case 2: 
+generates cover letter based on the job posint URL
 
 ## API Reference
 
@@ -33,5 +35,5 @@ A smallscale RAG system which loads PDF's documents(typically text books), when 
 
 ![App Screenshot](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/2.png)
 
-![App Screenshot](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/2.png)
+![App Screenshot](https://github.com/Immortal-Pi/LLM-using-Llamaindex-and-Llama2/blob/main/outputScreenshots/3.png)
 
