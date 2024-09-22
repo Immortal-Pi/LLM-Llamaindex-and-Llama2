@@ -15,7 +15,6 @@ A smallscale RAG system which loads PDF's documents(typically text books), when 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `Hugging Face` | `TOKEN` | **Required**. Your API key |
-| :-------- | :------- | :------------------------- |
 | `Groq cloud` | `GROQ_API_KEY` | **Required**. Your API key |
 
 .
