@@ -28,7 +28,7 @@ def create_streamlit_app(llm,portfolio,clean_text):
 
                 cover_letter=llm.write_cover(job,links)
                 # st.code(cover_letter,language='markdown')
-                st.markdown(cover_letter)
+                st.markdown(cover_letter )
         except Exception as e:
             st.error(f"An error occured: {e}")
 
