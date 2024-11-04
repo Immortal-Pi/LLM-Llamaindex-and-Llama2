@@ -3,7 +3,7 @@ import chromadb
 import uuid
 
 class Portfolio:
-    def __init__(self,file_path='coverLetterGenerator/app/resource/my_portfolio.csv'):
+    def __init__(self,file_path='resource/my_portfolio.csv'):
         self.file_path=file_path
         self.data=pd.read_csv(self.file_path)
         self.chrome_client=chromadb.PersistentClient('vectorstore')
