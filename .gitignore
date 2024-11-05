@@ -1,3 +1,7 @@
 data/
 PDF_Answers/resources/
 .env
+advanceRAG/DataRepository/
+advanceRAG/base_index/
+advanceRAG/sentence_index/
+advanceRAG/llama_model_v1/
